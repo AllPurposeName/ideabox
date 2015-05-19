@@ -38,6 +38,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+gem 'teaspoon-mocha'
 gem 'capybara'
 gem 'launchy'
 gem 'pry'

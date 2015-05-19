@@ -1,0 +1,16 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: CatchScurvy
+  body: be sure not to eat any fruit
+  status: 0
+
+two:
+  title: CountGold
+  body: one two three four...
+  status: 2
+
+three:
+  title: Pillage
+  body: Land ho, lets-a-go
+  status: 1
