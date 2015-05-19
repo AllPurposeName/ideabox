@@ -9,3 +9,8 @@ two:
   title: CountGold
   body: one two three four...
   status: 2
+
+three:
+  title: Pillage
+  body: Land ho, lets-a-go
+  status: 1
