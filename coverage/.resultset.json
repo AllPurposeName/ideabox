@@ -224,7 +224,7 @@
         null
       ]
     },
-    "timestamp": 1431998036
+    "timestamp": 1431998613
   },
   "MiniTest": {
     "coverage": {
@@ -459,9 +459,23 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/djgreenfield/Documents/turing/module_4/projects/ideabox/app/models/idea.rb": [
+        1,
+        1,
         1,
         1,
         1,
@@ -498,6 +512,6 @@
         null
       ]
     },
-    "timestamp": 1431998038
+    "timestamp": 1431998615
   }
 }

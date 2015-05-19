@@ -1,4 +1,6 @@
 class Idea < ActiveRecord::Base
+  validates :title, presence: true
+  validates :body, presence: true
   enum status: %w(Swill Hooch Cordial)
   def quality
     if status == "Swill"
