@@ -224,7 +224,7 @@
         null
       ]
     },
-    "timestamp": 1431999345
+    "timestamp": 1432061085
   },
   "MiniTest": {
     "coverage": {
@@ -423,6 +423,22 @@
         1,
         null
       ],
+      "/Users/djgreenfield/Documents/turing/module_4/projects/ideabox/test/features/guest_creating_idea_test.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/djgreenfield/Documents/turing/module_4/projects/ideabox/test/features/guest_viewing_test.rb": [
         1,
         null,
@@ -499,12 +515,12 @@
         1,
         null,
         1,
-        10,
+        13,
+        5,
+        8,
         4,
-        6,
-        3,
         null,
-        3,
+        4,
         null,
         null,
         null
@@ -512,7 +528,8 @@
       "/Users/djgreenfield/Documents/turing/module_4/projects/ideabox/app/controllers/ideas_controller.rb": [
         1,
         1,
-        2,
+        3,
+        3,
         null,
         null
       ],
@@ -532,6 +549,6 @@
         null
       ]
     },
-    "timestamp": 1431999347
+    "timestamp": 1432061086
   }
 }
