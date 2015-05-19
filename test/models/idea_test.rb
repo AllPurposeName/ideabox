@@ -23,4 +23,22 @@ class IdeaTest < ActiveSupport::TestCase
     refute no_body.save
     assert just_right.save
   end
+
+  test "title must be unique" do
+    original = Idea.create(title: "first!", body: "YUSSS")
+    poser = Idea.new(title: "first!", body: "Youtube comments are my life...")
+
+    refute poser.save
+    assert original.save
+  end
+
+  test "title and body must be of a certain length" do
+    short_title = Idea.new(title: "yo", body: "That should be enough to go on")
+    short_body = Idea.new(title: "Is verboseness important?", body: "no")
+    just_right = Idea.new(title: "It's important to speak up", body: "Explicitness never hurt no one")
+
+    refute short_title.save
+    refute short_body.save
+    assert just_right.save
+  end
 end
