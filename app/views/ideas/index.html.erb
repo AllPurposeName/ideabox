@@ -1,0 +1,10 @@
+<h1>Idea#index</h1>
+<p>Find me in app/views/idea/index.html.erb</p>
+<% @ideas.each do |idea| %>
+  <div class="<%=idea.title%>">
+    <h3><%= idea.title %></h3>
+    <h3><%= idea.body %></h3>
+    <h3><%= idea.quality %></h3>
+  </div>
+<% end %>
+
