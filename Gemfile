@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 
+gem 'faker'
 gem 'rails_12factor'
 gem 'draper', '~> 1.3'
 gem 'responders'
