@@ -5,3 +5,35 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+#
+
+class Seed
+
+  def self.call
+    Seed.new.call
+  end
+
+  def call
+    generate_ideas
+    print_ideas
+  end
+
+  def generate_ideas
+    15.times do |i|
+      title = "#{Faker::Hacker.verb} #{Faker::Hacker.noun}".capitalize
+      body = Faker::Hacker.say_something_smart
+      Idea.create(title: title, body: body)
+    end
+  end
+
+  def print_ideas
+    ideas = Idea.all
+    (Idea.count - 1).times do |i|
+      iteration = (i + 1)
+      title = ideas[iteration].title
+      puts "#{iteration}: Idea #{title} created!"
+    end
+  end
+end
+
+Seed.call
