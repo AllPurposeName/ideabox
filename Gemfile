@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 
+gem 'bootstrap-sass', '~> 3.3.2'
 gem 'faker'
 gem 'rails_12factor'
 gem 'draper', '~> 1.3'

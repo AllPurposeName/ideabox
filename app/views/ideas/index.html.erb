@@ -1,12 +1,16 @@
-<h1>Idea#index</h1>
-<p>Find me in app/views/idea/index.html.erb</p>
-<div>
-<% @ideas.each do |idea| %>
-  <div class="ideas <%=idea.title%> idea-<%=idea.id%>">
-    <h3><%= idea.title %></h3>
-    <h3><%= idea.body %></h3>
-    <h2><%= idea.quality %></h2>
-    <p data="itemId">Delete</p>
-  </div>
-<% end %>
+<div class="row">
+  <% @ideas.each do |idea| %>
+    <div class="ideas <%=idea.title%> idea-<%=idea.id%> col-md-4">
+      <h3><%= idea.title %></h3>
+      <p><%= idea.limited_body %></p>
+      <h3><%= idea.quality %></h3>
+      <div class="row">
+        <% idea.modifiers.each do |mod| %>
+          <div class="<%= mod.div %>">
+           <h4><%= mod.link %></h4>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
 </div>

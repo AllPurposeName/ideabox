@@ -21,7 +21,9 @@ class Seed
 
   def generate_first_idea
     title = "Do all the things"
-    body = "each one needs doing, brah, brah, brah, brah, brah, brah, brah, brah, brah!"
+    blah = ""
+    100.times {blah += 'blah '}
+    body = "each one needs doing, #{blah} "
     Idea.create(title: title, body: body, status: 1)
   end
 
