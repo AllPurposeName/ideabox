@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount MagicLamp::Genie, at: "/magic_lamp" if defined?(MagicLamp)
   resources :ideas, only: [:index, :create]
 
   # The priority is based upon order of creation: first created -> highest priority.

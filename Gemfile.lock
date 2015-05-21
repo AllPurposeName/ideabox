@@ -106,6 +106,10 @@ GEM
     libv8 (3.16.14.7)
     loofah (2.0.2)
       nokogiri (>= 1.5.9)
+    magic_lamp (1.6.0)
+      method_source
+      rails (>= 4.0.0)
+      rake
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     metaclass (0.0.4)
@@ -231,6 +235,7 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails
   launchy
+  magic_lamp
   mocha
   pg
   pry
