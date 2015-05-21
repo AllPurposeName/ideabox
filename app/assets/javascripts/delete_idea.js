@@ -25,16 +25,14 @@ var IdeaRepository = {
 
 var deleteIdea = function (ideaId) {
   IdeaRepository.destroy(ideaId).then(function (){
-    /**
-     this.attr("data-itemId").remove();
-     */
+    var classToRemove = ".idea-" + ideaId;
+    $(".ideas").remove(classToRemove);
   });
-
 };
 
 var deleteIdeaOnSubmission = function () {
   var id = this.attr("data-itemId")
-  $submitDelete.on('click', deleteIdea(id));
+    $submitDelete.on('click', deleteIdea(id));
 };
 
 var init = function () {

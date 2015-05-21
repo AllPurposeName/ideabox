@@ -14,15 +14,22 @@ class Seed
   end
 
   def call
+    generate_first_idea
     generate_ideas
     print_ideas
   end
 
+  def generate_first_idea
+    title = "Do all the things"
+    body = "each one needs doing, brah, brah, brah, brah, brah, brah, brah, brah, brah!"
+    Idea.create(title: title, body: body, status: 1)
+  end
+
   def generate_ideas
-    15.times do |i|
+    14.times do |i|
       title = "#{Faker::Hacker.verb} #{Faker::Hacker.noun}".capitalize
       body = Faker::Hacker.say_something_smart
-      Idea.create(title: title, body: body)
+      Idea.create(title: title, body: body, status: rand(3))
     end
   end
 
