@@ -6,8 +6,8 @@ class GuestCreatingIdeaTest < ActionController::TestCase
     visit '/ideas'
 
     within(".new_idea") do
-      assert page.has_field?("Title")
-      assert page.has_field?("Body")
+      assert page.has_field?("New Title")
+      assert page.has_field?("New Body")
       assert page.has_button?("Save New Idea", disabled: false)
     end
   end

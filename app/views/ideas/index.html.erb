@@ -1,3 +1,13 @@
+<%= form_for(@idea) do |f| %>
+  <%= f.label :title, "New Title" %>
+  <%= f.text_field :title %>
+
+  <%= f.label :body, "New Body" %>
+  <%= f.text_field :body %>
+
+  <%= f.submit "Save New Idea" %>
+<% end %>
+
 <div class="row">
   <% @ideas.each do |idea| %>
     <div class="ideas <%=idea.title%> idea-<%=idea.id%> col-md-4">
@@ -7,10 +17,11 @@
       <div class="row">
         <% idea.modifiers.each do |mod| %>
           <div class="<%= mod.div %>">
-           <h4><%= mod.link %></h4>
+            <h4><%= mod.link %></h4>
           </div>
         <% end %>
       </div>
     </div>
   <% end %>
 </div>
+
