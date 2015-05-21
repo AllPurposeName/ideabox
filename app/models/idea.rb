@@ -13,4 +13,16 @@ class Idea < ActiveRecord::Base
       "Old Salt's Cordial!"
     end
   end
+
+  def modifiers
+    if status == "Swill" || status == "Cordial"
+    [Modifier.new(status, 0), Modifier.new(status, 1)]
+    else
+    [Modifier.new(status, 0), Modifier.new(status, 1), Modifier.new(status, 2)]
+    end
+  end
+
+  def limited_body
+    body.truncate(100)
+  end
 end
